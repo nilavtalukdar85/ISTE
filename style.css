@@ -81,6 +81,12 @@
     margin: 0.25rem 0;
     border-radius: 2px;
 }
+.button-wrapper {
+    display: inline-block;
+    background: linear-gradient(177.41deg, #B1EB72 12.23%, #050505 82%); /* Gradient border */
+    padding: 2px; /* Size of the border */
+    border-radius: 3.31rem; /* Match button border radius */
+}
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
@@ -111,11 +117,9 @@
     .hamburger {
         display: flex;
     }
+    .button-wrapper {
+        display: none;
+    }
 }
-.button-wrapper {
-    display: inline-block;
-    background: linear-gradient(177.41deg, #B1EB72 12.23%, #050505 82%); /* Gradient border */
-    padding: 2px; /* Size of the border */
-    border-radius: 3.31rem; /* Match button border radius */
-}
+
 /* Navbar styling */
