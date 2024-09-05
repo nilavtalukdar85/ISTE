@@ -1,10 +1,13 @@
-// Navbar starts
-document.getElementById('hamburger').addEventListener('click', function() {
-    let navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
+    });
 });
+
 let logoImg = document.querySelector('.logo-img');
 logoImg.addEventListener('click', () => {
     location.reload();
 });
-// Navbar ends

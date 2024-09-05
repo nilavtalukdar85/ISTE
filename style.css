@@ -9,9 +9,14 @@
 .page_1 {
     min-height: 100vh;
     width: 100vw;
+}
+
+body {
+    overflow-x: clip;
     background-color: #000;
 }
 
+/* Navbar styling */
 /* Navbar styling */
 
 .navbar {
@@ -125,3 +130,40 @@
 }
 
 /* Navbar styling */
+/* Page 1 content */
+.hero {
+    max-width: 70rem;
+    min-height: 30rem;
+    border-radius: 3.75rem;
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.content1-wrapper {
+    max-width: 70rem;
+    margin: 0 auto;
+    background: linear-gradient(177.41deg, #b1eb72d0 12.23%, #05050500 82%);
+    padding: 2px;
+    border-radius: 3.75rem;
+}
+
+.page1-container {
+    padding: 1rem 5rem;
+    margin-top: 4rem;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.hero-img {
+    max-height: 25rem;
+    max-width: 25rem;
+    object-fit: cover;
+    object-position: center;
+}
