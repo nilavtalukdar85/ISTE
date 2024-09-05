@@ -31,13 +31,13 @@
                 <!-- Links starts-->
                 <section>
                     <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
+                        <li class="first"><a href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Events</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Gallery</a></li>
                         <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Team</a></li>
+                        <li class="last"><a href="#">Team</a></li>
                     </ul>
                 </section>
                 <!-- Links ends-->
@@ -63,7 +63,7 @@
                     <main class="hero">
                         <!-- Image container starts -->
                         <div class="img-container">
-                            <img src="./assets/hero.png" class="hero-img" alt="hero img">
+                            <img src="./assets/hero.png" class="hero-img" alt="hero img" loading="eager">
                         </div>
                         <!-- Image container ends -->
 
@@ -72,7 +72,12 @@
                             <section class="heading-container">
                                 <h2 class="heading">Indian Society For</h2>
                                 <h2 class="heading">Technical</h2>
-                                <h2 class="heading color">Education</h2>
+                                <h2 class="heading color">
+                                    <span class="auto-type">
+                                        
+                                    </span>
+                                    
+                                </h2>
                             </section>
                             <p class="hero-text1">AEC student’s chapter</p>
                             <section class="btn-group">
@@ -107,6 +112,7 @@
     <!-- Root ends -->
 
     <!-- JavaScript -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

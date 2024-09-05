@@ -10,3 +10,10 @@ let logoImg = document.querySelector('.logo-img');
 logoImg.addEventListener('click', () => {
     location.reload();
 });
+let typed = new Typed('.auto-type', {
+    strings: ['Education'],
+    typeSpeed: 80,
+    startDelay: 0,
+    backSpeed: 10,
+    loop: true,
+});
