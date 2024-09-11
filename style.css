@@ -169,6 +169,7 @@ body {
 .page1-container {
     padding: 1rem 2rem;
     margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .img-container {
@@ -310,4 +311,139 @@ body {
         height: 17rem;
     }
 }
+
+
+
 /* page 2 */
+.page2 {
+    margin-bottom: 5rem;
+    padding: 1rem;
+    color: white;
+}
+.heading-text2 {
+    font-size: 2.75rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+/* box 2 */ 
+.box2 {
+    min-height: 40rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* bar */
+.bar {
+    left: 50%;
+    position: absolute;
+    min-height: 40rem;
+    background-color: #B1EB72;
+    width: 1.5rem;
+}
+
+.cards {
+    min-height: 20rem;
+}
+.section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.card {
+    min-height: 15rem;
+    width: 33.5rem;
+    background-color: black;
+    border-radius: 3rem;
+    border: 1.7px solid white;
+    position: relative;
+    z-index: 2;
+}
+.card1 {
+    margin-left: 8.5rem;
+}
+.card2 {
+    margin-right: 7rem;
+}
+@media screen and (max-width: 892px) {
+    .card {
+        margin: 1rem;
+        border-color: #b1eb7264;
+        box-shadow: 0rem 0rem 2.5rem 0rem #b1eb7275;
+        border-radius: 3rem
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-1 {
+        margin-bottom: 2rem;
+    }
+    .bar {
+        display: none;
+    }
+}
+
+/* cards */
+.card-text {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.778);
+}
+.box1-img {
+    height: 6rem;
+}
+.card1 {
+    border-radius: 1.5rem;
+}
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card-heading {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.read-more-button {
+    padding: 0.45rem 0.75rem;
+    border-radius: 2rem;
+    border: 1px solid #B1EB72;
+    background-color: #B1EB72;
+    cursor: pointer;
+}
+
+/* responsive cards */
+@media screen and (max-width: 600px) {
+    .card {
+        display: flex;
+        padding: 2rem;
+        flex-direction: column;
+        align-items: center;
+        border-color: #b1eb7264;
+        box-shadow: 0rem 0rem 2.5rem 0rem #b1eb7275;
+        border-radius: 3rem
+    }
+    .section-1 {
+        margin-bottom: 2rem;
+    }
+    .bar {
+        display: none;
+    }
+}
