@@ -92,7 +92,7 @@ body {
     border-radius: 3.31rem; /* Match button border radius */
 }
 
-@media (max-width: 992px) {
+@media (max-width: 946px) {
     .navbar {
         width: 85%;
     }
@@ -334,7 +334,7 @@ body {
 
 /* box 2 */ 
 .box2 {
-    min-height: 40rem;
+    min-height: 50rem;
     max-width: 75rem;
     margin: 0 auto;
     display: flex;
@@ -345,13 +345,13 @@ body {
 .bar {
     left: 50%;
     position: absolute;
-    min-height: 40rem;
-    background-color: #B1EB72;
+    min-height: 50rem;
+    background-color: #b1eb72;
     width: 1.5rem;
 }
 
 .cards {
-    min-height: 20rem;
+    min-height: 25rem;
 }
 .section-1 {
     display: flex;
@@ -378,25 +378,6 @@ body {
 .card2 {
     margin-right: 7rem;
 }
-@media screen and (max-width: 892px) {
-    .card {
-        margin: 1rem;
-        border-color: #b1eb7264;
-        box-shadow: 0rem 0rem 2.5rem 0rem #b1eb7275;
-        border-radius: 3rem
-    }
-    .cards {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .section-1 {
-        margin-bottom: 2rem;
-    }
-    .bar {
-        display: none;
-    }
-}
 
 /* cards */
 .card-text {
@@ -408,6 +389,9 @@ body {
     height: 6rem;
 }
 .card1 {
+    border-radius: 1.5rem;
+}
+.card2 {
     border-radius: 1.5rem;
 }
 .card {
@@ -433,7 +417,56 @@ body {
     cursor: pointer;
 }
 
+/* responsive shadows */
+.section-1 {
+    position: relative;
+}
+.section-2 {
+    position: relative;
+}
+.shadow {
+    height: 15.4rem;
+    width: 26rem;
+    background-color: #B1EB72;
+    position: absolute;
+}
+.shadow1 {
+    bottom: 7.5rem;
+    left: 5.8rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.shadow2 {
+    top: 7.5rem;
+    right: 3.75rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+/* responsive shadows */
+
 /* responsive cards */
+@media screen and (max-width: 1080px) {
+    .card {
+        margin: 1rem;
+        border-color: #b1eb7264;
+        box-shadow: 0rem 0rem 2.5rem 0rem #b1eb7275;
+        border-radius: 3rem
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-1 {
+        margin-bottom: 2rem;
+    }
+    .bar {
+        display: none;
+    }
+    .shadow {
+        display: none;
+    }
+}
 @media screen and (max-width: 600px) {
     .card {
         display: flex;
