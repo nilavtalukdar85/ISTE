@@ -56,6 +56,7 @@ body {
         color: #B1EB72;
     }
 }
+
 .connect-btn {
     position: relative; /* Make sure the button is positioned relative to its pseudo-element */
     height: 3rem;
@@ -95,6 +96,9 @@ body {
     .navbar {
         width: 85%;
     }
+    .list {
+        border-bottom: 0.75rem solid #1f1e1e;
+    }
     .nav-links {
         display: none;
         flex-direction: column;
@@ -103,7 +107,7 @@ body {
         top: 6.8rem;
         left: 0;
         gap: 0;
-        z-index: 2;
+        z-index: 3;
         background-color: #000;
     }
     .logo-img {
