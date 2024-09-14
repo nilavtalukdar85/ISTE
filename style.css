@@ -160,6 +160,7 @@ body {
     margin: 0 auto;
     display: flex;
     position: relative;
+    overflow: clip;
 }
 
 .content1-wrapper {
@@ -168,6 +169,7 @@ body {
     background: linear-gradient(177.41deg, #b1eb72d0 12.23%, #05050500 82%);
     padding: 2px;
     border-radius: 3.75rem;
+    max-width: 70rem;
 }
 
 .page1-container {
@@ -465,6 +467,18 @@ body {
     }
     .shadow {
         display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .animate {
+        perspective: 1000px;
+    }
+    .animate {
+        transform-style: preserve-3d;
+        transition: transform 0.2s;
+    }
+    .animate {
+        transform: rotateY(0deg) rotateX(0deg);
     }
 }
 @media screen and (max-width: 600px) {
