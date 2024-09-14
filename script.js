@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function initializeTilt() {
         if (window.innerWidth >= 710 && window.innerWidth <= 1080) {
             VanillaTilt.init(document.querySelectorAll('.animate'), {
-                max: 25,
+                max: 15,
                 speed: 400,
             });
         }
