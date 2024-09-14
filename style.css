@@ -484,3 +484,21 @@ body {
         display: none;
     }
 }
+
+/* animations for page 2 */
+[data-aos="new-animation"] {
+    opacity: 0;
+    transition: all 1.5s linear 0s;
+  
+    &.aos-animate {
+      opacity: 1;
+    }
+}
+[data-aos="new-animation2"] {
+    opacity: 0;
+    transition: all 2s linear 0s;
+  
+    &.aos-animate {
+      opacity: 1;
+    }
+}

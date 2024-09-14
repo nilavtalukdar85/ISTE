@@ -17,5 +17,4 @@ let typed = new Typed('.auto-type', {
     backSpeed: 10,
     loop: true,
 });
-
 AOS.init();
