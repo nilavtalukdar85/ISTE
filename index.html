@@ -15,19 +15,37 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- iste favicon -->
-    <link rel="icon" type="image/x-icon" href="Images/ISTEico.ico" >
+    <link rel="icon" type="image/x-icon" href="assets/ISTE.png" >
+
+    <!-- lenis -->
+    <link rel="stylesheet" href="lenis.css">
 
     <!-- Google fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
+
+    <!-- scroll bar -->
+    <style>
+        ::-webkit-scrollbar {
+            width: 0.65rem;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: black;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #b1eb72;
+            border-radius: 1rem;
+        }
+    </style>
+
     <!-- Google fonts -->
 
     <!-- font aweosme cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <main class="root">
+    <main class="root" data-scroll-container>
         <!-- Page 1 -->
         <section class="page_1">
             <!-- Navbar starts -->
@@ -210,6 +228,12 @@
     <!-- Root ends -->
 
     <!-- JavaScript -->
+    <script src="lenis.js"></script>
+<script>
+    (function () {
+        var scroll = new LocomotiveScroll();
+    })();
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
