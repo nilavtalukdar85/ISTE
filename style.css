@@ -14,6 +14,7 @@
 body {
     overflow-x: clip;
     background-color: #000;
+    scroll-behavior: smooth;
 }
 
 /* Navbar styling */
@@ -29,7 +30,6 @@ body {
     max-width: 1300px;
     margin: 0 auto;
 }
-
 .logo-img {
     width: 4.188rem;
     height: 4.313rem;
@@ -97,7 +97,7 @@ body {
         width: 85%;
     }
     .list {
-        border-bottom: 0.75rem solid #1f1e1e;
+        border-bottom: 1rem solid #1f1e1e;
     }
     .nav-links {
         display: none;
@@ -491,6 +491,9 @@ body {
         box-shadow: 0rem 0rem 2.5rem 0rem #b1eb7275;
         border-radius: 3rem
     }
+    .card2 {
+        padding: 2rem;
+    }
     .section-1 {
         margin-bottom: 2rem;
     }
@@ -561,4 +564,88 @@ body {
   100% {
     -webkit-transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+/* page3 */
+.page3 {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+.heading3 {
+    color: white;
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 2.75rem;
+    font-weight: 500;
+}
+.about-container {
+    max-width: 70rem;
+    min-height: 43rem;
+    padding: 8rem;
+    margin: 5rem auto;
+    position: relative;
+    backdrop-filter: blur(5px);
+    border-radius: 3.75rem;
+    background: #1E1E1EC7;
+    border: 1px solid #CABFDA8C;
+    transition: all 0.5s linear 0s;
+}
+.about-text {
+    color: rgba(255, 255, 255);
+    text-align: justify;
+    line-height: 2.25rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.about-btn {
+    margin-top: 2rem;
+    text-align: center;
+    display: none;
+}
+
+@media screen and (max-width: 1260px) {
+    .about-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .about-container {
+        border-color: #8052c0d7;
+        box-shadow: 0rem 0rem 2.5rem 0rem #8052c091;
+        padding: 3rem;
+        max-width: 45rem;
+        min-height: fit-content;
+        background: transparent;
+    }
+}
+@media screen and (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+        padding: 2.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .about-container {
+        max-width: 35rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .about-text{
+        text-align: center;
+        font-size: 1rem;
+        color: white;
+        font-weight: 200;
+    }
+    .about-container {
+        padding: 1.75rem;
+        padding-top: 3rem;
+    }
+    .about-btn {
+        display: block;
+        transition: all 0.5s linear 0s;
+    }
+    .about-img {
+        display: none;
+    }
 }

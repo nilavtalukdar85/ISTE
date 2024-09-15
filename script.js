@@ -42,6 +42,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 speed: 400,
             });
         }
+        if(window.innerWidth >= 1500) {
+            VanillaTilt.init(document.querySelectorAll('.secondary'), {
+                max: 10,
+                speed: 400,
+            });
+        }
     }
 
     // Run on page load
@@ -53,6 +59,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //test code
+let about = document.querySelector('.about-text');
+let more = document.querySelector('.more');
+let count = 0;
+let extraString = (about.innerText).slice(0, 310);
+if(window.innerWidth <= 600) {
+    text = about.innerText;
+    about.innerText = extraString;
+}
+let moreData = true;
+more.addEventListener('click', () => {
+    if(moreData == true) {
+        more.innerText = 'less';
+        about.innerText = text;
+        moreData = false
+    } else {
+        more.innerText = 'more'
+        storedText = about.innerText;
+        about.innerText = extraString;
+        moreData = true;
+    }
+});
+
 
 
 AOS.init();
