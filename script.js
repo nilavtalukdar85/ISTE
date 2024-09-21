@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 speed: 400,
             });
         }
-        if(window.innerWidth >= 1500) {
+        if(window.innerWidth >= 1350) {
             VanillaTilt.init(document.querySelectorAll('.secondary'), {
                 max: 10,
                 speed: 400,

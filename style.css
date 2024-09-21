@@ -602,11 +602,50 @@ body {
     display: none;
 }
 
+.logos {
+    height: 6rem;
+}
+.logo1 {
+    transform: scale(1.1);
+}
+.logo2 {
+    transform: scale(1.1);
+}
+.logo-wrapper-1 {
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+    height: 9rem;
+    width: 9rem;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-wrapper-2 {
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    height: 9rem;
+    width: 9rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 1260px) {
     .about-container{
             display: flex;
             justify-content: space-between;
             align-items: center;
+    }
+    .logo-wrapper-1, .logo-wrapper-2 {
+        display: none;
     }
 }
 @media screen and (max-width: 1080px) {
