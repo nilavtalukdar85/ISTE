@@ -112,7 +112,7 @@
                                         <span>Report</span>
                                     </button>
                                 </a>
-                                <a href="https://iste.aec.ac.in/Images/Magazine%20Coming%20Soon.png" class="hero-btn-wrapper vibrate" target="_blank">
+                                <a href="https://online.fliphtml5.com/afnau/slxv/" class="hero-btn-wrapper vibrate" target="_blank">
                                     <button class="hero-button">
                                         ISTE Magazine’ 24
                                     </button>
@@ -260,10 +260,14 @@
 
                 <!-- form starts -->
                 <section class="form-container">
-                    <form action="null" class="form">
-                        <input type="text" class="name form-elements" placeholder="Enter your name">
-                        <input type="text" class="phno form-elements" placeholder="Enter your phone number">
-                        <input type="email" class="email form-elements" placeholder="Enter your email">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="form">
+
+                        <input type="hidden" name="access_key" value="1bc932de-c87a-42af-900b-b450ce52f7f6">
+
+                        <input type="text" class="name form-elements" placeholder="Enter your name" required name="name">
+                        <input type="text" class="phno form-elements" placeholder="Enter your Phone No. or Email" required name="contact-details">
+                        <textarea type="text" resize="none"
+                        class="email form-elements textarea" placeholder="Elaborate your concern" required name="concern"></textarea>
 
                         <!-- submit button starts -->
                         <div class="submit-btn-container">
