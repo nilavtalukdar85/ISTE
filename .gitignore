@@ -1,5 +1,5 @@
-assets/*.png
-assets/*.svg
-assets/*.jpg
-assets/*.jpeg
-assets/*.wbep
+*.png 
+*.svg
+*.jpg
+*.jpeg
+*.wbep
